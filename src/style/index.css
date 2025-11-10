@@ -1,0 +1,30 @@
+:root {
+  --header-height: 72px;
+}
+
+body {
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Global header styling (the App's <header className="back-header">) */
+header {
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  height: var(--header-height);
+}
+
+/* push main content below the fixed header so elements (like MediaSlider) don't get hidden */
+main {
+  padding-top: var(--header-height);
+}

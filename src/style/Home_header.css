@@ -1,0 +1,18 @@
+.home-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 2rem;
+    margin-top: 1.5rem;
+    height: var(--header-height, 72px);
+    z-index: 1001;
+    width: auto;
+}
+
+.home-title {
+    font-size: 3.5rem;
+    color: #7c5ffd;
+    padding: 2rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
