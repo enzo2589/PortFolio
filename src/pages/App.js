@@ -1,7 +1,7 @@
 import Header from '../components/Header';
 import Homeheader from '../components/Home_header';
 import MediaSlider from '../components/MediaSlider';
-// import Projet from '../components/Projet';
+import Projet from '../components/Projet';
 import '../style/index.css';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
             </header>
             <main>
                 <MediaSlider />
-                {/* <Projet /> */}
+                 <Projet />
             </main>
         </div>
     );

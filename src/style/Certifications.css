@@ -1,10 +1,10 @@
-.projects-section {
+.certifications-section {
     padding: 4rem 2rem;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.projects-title {
+.certifications-title {
     font-size: 2.5rem;
     color: #333;
     text-align: center;
@@ -12,7 +12,7 @@
     position: relative;
 }
 
-.projects-title::after {
+.certifications-title::after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -24,14 +24,14 @@
     border-radius: 2px;
 }
 
-.projects-grid {
+.certifications-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
     padding: 1rem;
 }
 
-.project-card {
+.certification-card {
     background: white;
     border-radius: 12px;
     overflow: hidden;
@@ -43,19 +43,19 @@
     flex-direction: column;
 }
 
-.project-card:hover {
+.certification-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.project-image {
+.certification-image {
     position: relative;
     width: 100%;
     padding-top: 60%;
     overflow: hidden;
 }
 
-.project-image img {
+.certification-image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -65,7 +65,7 @@
     transition: transform 0.5s ease;
 }
 
-.project-overlay {
+.certification-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -79,7 +79,7 @@
     transition: opacity 0.3s ease;
 }
 
-.project-overlay span {
+.certification-overlay span {
     color: white;
     font-weight: 600;
     font-size: 1.1rem;
@@ -87,42 +87,42 @@
     transition: transform 0.3s ease;
 }
 
-.project-card:hover .project-overlay {
+.certification-card:hover .certification-overlay {
     opacity: 1;
 }
 
-.project-card:hover .project-overlay span {
+.certification-card:hover .certification-overlay span {
     transform: translateY(0);
 }
 
-.project-info {
+.certification-info {
     padding: 1.5rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
 
-.project-info h3 {
-    font-size: 1.4rem;
+.certification-info h3 {
+    font-size: 1.2rem;
     margin: 0 0 0.8rem 0;
     color: #333;
 }
 
-.project-info p {
+.certification-info p {
     color: #666;
     margin: 0 0 1rem 0;
     line-height: 1.5;
     flex-grow: 1;
 }
 
-.project-tags {
+.certification-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: auto;
 }
 
-.tag {
+.certification-tag {
     background: #f0eeff;
     color: #7c5ffd;
     padding: 0.3rem 0.8rem;
@@ -131,18 +131,15 @@
     font-weight: 500;
 }
 
-
 @media (max-width: 768px) {
-    .projects-section {
+    .certifications-section {
         padding: 3rem 1rem;
     }
-    
-    .projects-grid {
+    .certifications-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
         gap: 1.5rem;
     }
-    
-    .projects-title {
+    .certifications-title {
         font-size: 2rem;
         margin-bottom: 2rem;
     }
