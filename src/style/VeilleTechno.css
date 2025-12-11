@@ -1,0 +1,236 @@
+.veille-techno-container {
+    padding-top: 72px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.veille-techno-header {
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #7c5ffd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.back-button:hover {
+    background: #f0eeff;
+    transform: translateX(-5px);
+}
+
+.veille-techno-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+.veille-techno-hero {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.veille-techno-title {
+    font-size: 2.8rem;
+    color: #333;
+    margin: 2rem 0 1rem;
+    position: relative;
+}
+
+.veille-techno-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #7c5ffd;
+    border-radius: 2px;
+}
+
+.veille-techno-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 3rem 0;
+    line-height: 1.6;
+}
+
+.veille-techno-themes {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.theme-section {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.theme-section:hover {
+    box-shadow: 0 8px 25px rgba(124, 95, 253, 0.15);
+}
+
+.theme-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #f0eeff;
+}
+
+.theme-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+}
+
+.theme-title {
+    font-size: 2rem;
+    color: #333;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+}
+
+.theme-description {
+    color: #666;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.items-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.item-card {
+    background: #f9f9f9;
+    border-left: 4px solid #7c5ffd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    min-height: 300px;
+}
+
+.item-card:hover {
+    background: white;
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.item-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.item-icon {
+    font-size: 1.3rem;
+}
+
+.item-type {
+    background: #f0eeff;
+    color: #7c5ffd;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.item-date {
+    margin-left: auto;
+    color: #999;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.item-title {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 0 0 0.8rem 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.item-description {
+    color: #555;
+    font-size: 0.95rem;
+    margin: 0;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.veille-techno-footer {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .veille-techno-container {
+        padding-top: 72px;
+    }
+
+    .veille-techno-content {
+        padding: 0 1rem 2rem;
+    }
+
+    .veille-techno-title {
+        font-size: 2rem;
+    }
+
+    .veille-techno-subtitle {
+        font-size: 1rem;
+    }
+
+    .theme-section {
+        padding: 1.5rem;
+    }
+
+    .theme-title {
+        font-size: 1.3rem;
+    }
+
+    .items-list {
+        grid-template-columns: 1fr;
+    }
+
+    .item-card {
+        padding: 1rem;
+    }
+
+    .item-date {
+        margin-left: 0;
+        display: block;
+        margin-top: 0.5rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

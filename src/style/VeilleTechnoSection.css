@@ -1,0 +1,114 @@
+.veille-techno-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #7c5ffd 0%, #b19cff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.veille-techno-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.veille-techno-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+}
+
+.veille-techno-section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+.veille-techno-section-text h2 {
+    font-size: 2.2rem;
+    color: white;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+}
+
+.veille-techno-section-description {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 2rem 0;
+    line-height: 1.8;
+}
+
+.veille-techno-button {
+    display: inline-block;
+    background: white;
+    color: #7c5ffd;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.veille-techno-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.veille-techno-section-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.veille-techno-icon {
+    font-size: 8rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .veille-techno-section {
+        padding: 2rem;
+    }
+
+    .veille-techno-section-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .veille-techno-section-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .veille-techno-section-description {
+        font-size: 1rem;
+    }
+
+    .veille-techno-icon {
+        font-size: 5rem;
+    }
+}

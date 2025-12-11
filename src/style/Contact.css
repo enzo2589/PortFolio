@@ -1,0 +1,242 @@
+.contact-container {
+    padding-top: 72px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.contact-header {
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    color: #7c5ffd;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.back-button:hover {
+    background: #f0eeff;
+    transform: translateX(-5px);
+}
+
+.contact-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem 4rem;
+}
+
+.contact-title {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    position: relative;
+}
+
+.contact-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #7c5ffd;
+    border-radius: 2px;
+}
+
+.contact-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    text-align: center;
+    margin: 3rem 0 3rem;
+    line-height: 1.6;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contact-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #7c5ffd 0%, #b19cff 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: -1;
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(124, 95, 253, 0.2);
+}
+
+.contact-card:hover::before {
+    left: 0;
+    opacity: 0.05;
+}
+
+.contact-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.linkedin-card .contact-icon {
+    color: #0077b5;
+}
+
+.github-card .contact-icon {
+    color: #333;
+}
+
+.cv-card .contact-icon {
+    color: #7c5ffd;
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+.contact-card p {
+    color: #666;
+    margin: 0.5rem 0 1rem;
+    font-size: 0.95rem;
+}
+
+.contact-link-arrow {
+    display: inline-block;
+    color: #7c5ffd;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-link-arrow {
+    transform: translateX(5px);
+}
+
+.email-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.email-section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0 0 1.5rem 0;
+    position: relative;
+}
+
+.email-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: #7c5ffd;
+}
+
+.email-link {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #7c5ffd;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border: 2px solid #7c5ffd;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+.email-link:hover {
+    background: #7c5ffd;
+    color: white;
+}
+
+.contact-footer {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        padding-top: 72px;
+    }
+
+    .contact-content {
+        padding: 0 1rem 2rem;
+    }
+
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-subtitle {
+        font-size: 1rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-card {
+        padding: 2rem;
+    }
+
+    .email-section {
+        padding: 2rem;
+    }
+
+    .email-link {
+        font-size: 1.1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .back-button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+}

@@ -1,0 +1,138 @@
+.skills-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #7c5ffd 0%, #b19cff 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.skills-section-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.skills-section-title {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skills-section-description {
+    font-size: 1.1rem;
+    margin: 1rem 0 2.5rem 0;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+.skills-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+}
+
+.skill-preview-item {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.skill-preview-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.skill-preview-icon {
+    display: block;
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.skill-preview-item h3 {
+    font-size: 1.3rem;
+    margin: 0.8rem 0;
+    font-weight: 600;
+}
+
+.skill-preview-item p {
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.skills-cta-button {
+    display: inline-block;
+    background: white;
+    color: #7c5ffd;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.skills-cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.skills-floating-icon {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 4rem;
+    opacity: 0.15;
+    animation: float 6s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .skills-section {
+        padding: 3rem 1rem;
+    }
+
+    .skills-section-title {
+        font-size: 2rem;
+    }
+
+    .skills-section-description {
+        font-size: 1rem;
+    }
+
+    .skills-preview {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skills-cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .skills-floating-icon {
+        top: 20px;
+        right: 20px;
+        font-size: 3rem;
+    }
+}

@@ -9,10 +9,29 @@
     width: auto;
 }
 
+.home-title-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.home-title-link:hover {
+    transform: scale(1.05);
+}
+
 .home-title {
     font-size: 3.5rem;
     color: #7c5ffd;
     padding: 2rem;
     font-weight: 600;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    transition: all 0.3s ease;
+}
+
+.home-title-link:hover .home-title {
+    text-shadow: 2px 2px 8px rgba(124, 95, 253, 0.3);
 }

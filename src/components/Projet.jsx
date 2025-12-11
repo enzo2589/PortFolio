@@ -1,30 +1,14 @@
 import "../style/Projet.css";
-import placeholderImage from '../img/image1.jpeg';
-
-const projects = [
-    {
-        id: 1,
-        title: "Portfolio",
-        description: "Mon portfolio personnel développé avec React",
-        image: placeholderImage,
-        tags: ["React", "CSS", "JavaScript"],
-    },
-    {
-        id: 2,
-        title: "Projet 2",
-        description: "Description courte du projet 2",
-        image: placeholderImage,
-        tags: ["Node.js", "Express", "MongoDB"],
-    },
-];
+import { Link } from 'react-router-dom';
+import { projectsData } from '../data/projectsData';
 
 export default function Projet() {
     return (
-        <section className="projects-section">
+        <section className="projects-section" id="projets">
             <h2 className="projects-title">Mes Projets</h2>
             <div className="projects-grid">
-                {projects.map((project) => (
-                    <div key={project.id} className="project-card">
+                {projectsData.map((project) => (
+                    <Link to={`/projet/${project.id}`} key={project.id} className="project-card">
                         <div className="project-image">
                             <img src={project.image} alt={project.title} />
                             <div className="project-overlay">
@@ -40,7 +24,7 @@ export default function Projet() {
                                 ))}
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>

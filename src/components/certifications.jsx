@@ -1,28 +1,30 @@
 
 import "../style/Certifications.css";
-import placeholderImage from '../img/image2.jpeg';
+import placeholderImage from '../img/image1.jpeg';
+import ebios from '../img/certif_EBIOS.png';
 import { Link } from 'react-router-dom';
+
 
 const certifications = [
 	{
 		id: 1,
-		title: "React Developer",
-		description: "Certification officielle React pour développeurs front-end.",
-		image: placeholderImage,
-		tags: ["React", "Front-end", "JavaScript"],
+		title: "Mook Ebios",
+		description: "Certification officielle Mook Ebios Risk Manager.",
+		image: ebios,
+		tags: ["Risk Management", "Security"],
 	},
 	{
 		id: 2,
-		title: "Node.js Expert",
-		description: "Certification avancée Node.js pour le back-end.",
+		title: "Pix",
+		description: "Certification Pix.",
 		image: placeholderImage,
-		tags: ["Node.js", "Back-end", "API"],
+		tags: ["compétences numériques"],
 	},
 ];
 
 export default function Certifications() {
 	return (
-		<section className="certifications-section">
+		<section className="certifications-section" id="certifications">
 			<h2 className="certifications-title">Mes Certifications</h2>
 			<div className="certifications-grid">
 				{certifications.map((certif) => (
