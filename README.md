@@ -94,3 +94,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Ajout du projet `Jeu du Demineur en Python` avec justification de la competence 1.6, lien GitHub et references documentaires Python (structures de donnees, random).
 - Ajout du projet `Deploiement boutique WordPress (Restaurant)` avec justification de la competence 1.5 et preuves front-office / back-office.
 - Ajout des preuves visuelles associees dans `src/img` : e-commerce, demineur et WordPress.
+- Correction du blocage de deploiement Vercel : suppression des imports non utilises dans `src/data/projectsData.js` (warnings ESLint qui deviennent bloquants en mode CI).
+- Verification locale du build en mode CI (`CI=true npm run build`) : compilation reussie.
