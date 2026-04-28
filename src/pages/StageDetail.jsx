@@ -53,6 +53,63 @@ export default function StageDetail() {
                         ))}
                     </ul>
 
+                    {stage.competencyJustifications && stage.competencyJustifications.length > 0 && (
+                        <>
+                            <h2>Justification des competences (E4/E5)</h2>
+                            <ul className="stage-competency-list">
+                                {stage.competencyJustifications.map((item) => (
+                                    <li key={item.skill}>
+                                        <strong>{item.skill} :</strong> {item.evidence}
+                                    </li>
+                                ))}
+                            </ul>
+                        </>
+                    )}
+
+                    {stage.proofImages && stage.proofImages.length > 0 && (
+                        <>
+                            <h2>Preuves / Traces</h2>
+                            <div className="stage-proof-grid">
+                                {stage.proofImages.map((image) => (
+                                    <figure key={image.alt} className="stage-proof-item">
+                                        <img src={image.src} alt={image.alt} />
+                                        <figcaption>{image.alt}</figcaption>
+                                    </figure>
+                                ))}
+                            </div>
+                        </>
+                    )}
+
+                    {stage.documentationLinks && stage.documentationLinks.length > 0 && (
+                        <>
+                            <h2>Sources techniques consultees</h2>
+                            <ul className="stage-links-list">
+                                {stage.documentationLinks.map((url) => (
+                                    <li key={url}>
+                                        <a href={url} target="_blank" rel="noopener noreferrer">
+                                            {url}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </>
+                    )}
+
+                    {stage.competencyTables && stage.competencyTables.length > 0 && (
+                        <>
+                            <h2>Tableaux de competences associes</h2>
+                            <ul className="stage-links-list">
+                                {stage.competencyTables.map((table) => (
+                                    <li key={table.label}>
+                                        <a href={table.url} target="_blank" rel="noopener noreferrer">
+                                            {table.label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </>
+                    )}
+
                     <div className="stage-detail-actions">
                         <a
                             href={stage.reportUrl}

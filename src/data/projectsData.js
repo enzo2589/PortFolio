@@ -19,6 +19,12 @@ import demineurPythonPreuve from '../img/demineur-python-preuve.png';
 import wordpressRestaurantFront from '../img/wordpress-restaurant-front.png';
 import wordpressRestaurantAdmin from '../img/wordpress-restaurant-admin.png';
 import portfolioVercelProof from '../img/portfolio-vercel-proof.png';
+import brasserieEcosystemLogin from '../img/brasserie-ecosystem-login.png';
+import brasserieEcosystemDashboard from '../img/brasserie-ecosystem-dashboard.png';
+import brasserieEcosystemStocks from '../img/brasserie-ecosystem-stocks.png';
+import tourdefranceMcd from '../img/tourdefrance-mcd.png';
+import tourdefranceSpecs from '../img/tourdefrance-specs.png';
+import sisrGlpiHelpdesk from '../img/sisr-glpi-helpdesk.png';
 
 export const projectsData = [
     {
@@ -522,6 +528,147 @@ export const projectsData = [
                 src: wordpressRestaurantAdmin,
                 alt: "Back-office WordPress avec WooCommerce"
             }
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
+        link: "",
+    },
+    {
+        id: 13,
+        title: "Ecosysteme Brasserie (React & Flutter)",
+        description: "Ecosysteme web/mobile unifie avec suivi incidents GLPI",
+        image: brasserieEcosystemDashboard,
+        tags: ["React", "Flutter", "GLPI", "GitHub", "Tests", "Deploiement"],
+        fullDescription: "Ce projet de grande envergure a consiste a developper un ecosysteme numerique complet pour une brasserie, avec une interface web React et une application mobile Flutter. L'objectif etait de proposer une experience utilisateur unifiee sur tous les supports. Tout au long du projet, j'ai gere les evolutions, corrige les bugs signales et deploie les versions destinees aux utilisateurs finaux.",
+        details: [
+            "Developpement parallele des interfaces React et Flutter",
+            "Gestion des demandes et incidents via GLPI",
+            "Cycle de correction et d'evolution fonctionnelle",
+            "Tests d'integration et d'acceptation inter-applications",
+            "Documentation technique et utilisateur de prise en main"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.2 Repondre aux incidents et aux demandes d'assistance et d'evolution",
+                evidence: "Usage de GLPI pour collecter, suivre et orienter les tickets (bugs, assistance, evolutions). Chaque demande a ete diagnostiquee, suivie selon une procedure claire, puis resolue et integree au code."
+            },
+            {
+                skill: "1.5 Mettre a disposition des utilisateurs un service informatique",
+                evidence: "Orchestration du deploiement des interfaces React et Flutter, execution de tests d'integration/acceptation et redaction d'une documentation pour accompagner la prise en main des utilisateurs."
+            }
+        ],
+        proofImages: [
+            {
+                src: brasserieEcosystemLogin,
+                alt: "Connexion securisee de l'administration brasserie"
+            },
+            {
+                src: brasserieEcosystemDashboard,
+                alt: "Tableau de bord de gestion des stocks brasserie"
+            },
+            {
+                src: brasserieEcosystemStocks,
+                alt: "Interface de gestion detaillee des stocks"
+            }
+        ],
+        documentationLinks: [
+            "https://glpi-project.org/"
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
+        link: "",
+    },
+    {
+        id: 14,
+        title: "Gestion BDD Tour de France",
+        description: "Conception et exploitation d'une base relationnelle sans interface UI",
+        image: tourdefranceMcd,
+        tags: ["SQL", "MCD", "SGBD", "Specifications", "Binome"],
+        fullDescription: "Realise en binome, ce projet s'est concentre sur l'architecture et la manipulation de donnees du Tour de France, sans couche interface utilisateur. Nous avons redige un dossier de specifications techniques, modelise le systeme (coureurs, equipes, etapes, villes, classements), puis importe des donnees reelles pour valider nos requetes SQL.",
+        details: [
+            "Conception du modele conceptuel de donnees (MCD)",
+            "Transformation vers schema physique SGBD",
+            "Importation et nettoyage de jeux de donnees",
+            "Requetes SQL d'exploitation et de verification",
+            "Presentation finale des choix d'architecture"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.1 Gerer le patrimoine informatique",
+                evidence: "Participation active a la modelisation du patrimoine informationnel (entites et relations), structuration du schema SGBD et import des donnees pour garantir une base exploitable et coherente."
+            },
+            {
+                skill: "1.4 Travailler en mode projet",
+                evidence: "Travail en binome avec analyse des objectifs, planification des activites de conception, redaction du dossier de specifications techniques et restitution des choix techniques en presentation."
+            }
+        ],
+        proofImages: [
+            {
+                src: tourdefranceMcd,
+                alt: "MCD de la base Tour de France"
+            },
+            {
+                src: tourdefranceSpecs,
+                alt: "Presentation du dossier de specifications techniques"
+            }
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
+        link: "",
+    },
+    {
+        id: 15,
+        title: "Projet SISR - Deploiement GLPI & Infrastructure",
+        description: "Conception d'une infrastructure GLPI securisee et exploitable en production",
+        image: sisrGlpiHelpdesk,
+        tags: ["SISR", "GLPI", "Helpdesk", "HTTPS", "Fail2ban", "Sauvegardes"],
+        fullDescription: "Ce projet d'infrastructure systeme et reseau a consiste a concevoir, deployer et securiser une solution complete de gestion de parc et d'assistance utilisateurs basee sur GLPI. Realise en equipe et organise en sprints, il couvre tout le cycle de vie : architecture, securisation (HTTPS, pare-feu, Fail2ban) et scripts de sauvegarde, jusqu'a la mise en service d'un centre de services operationnel.",
+        details: [
+            "Deploiement et parametrage d'une plateforme GLPI complete",
+            "Mise en place des mecanismes de securite (HTTPS, firewall, Fail2ban)",
+            "Automatisation de la sauvegarde et preparation a la reprise",
+            "Organisation en sprints avec livrables techniques",
+            "Simulation de support avec creation/suivi/resolution de tickets"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.2 Repondre aux incidents et aux demandes d'assistance et d'evolution",
+                evidence: "Parametrage du helpdesk GLPI et structuration du processus de support via des simulations de tickets. Cette demarche formalise la chaine complete de traitement des incidents et la maintenance documentaire."
+            }
+        ],
+        proofImages: [
+            {
+                src: sisrGlpiHelpdesk,
+                alt: "Console GLPI d'assistance et de tickets"
+            }
+        ],
+        documentationLinks: [
+            "https://glpi-project.org/",
+            "https://help.glpi-project.org/"
         ],
         competencyTables: [
             {

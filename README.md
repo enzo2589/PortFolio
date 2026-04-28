@@ -100,3 +100,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Mise a jour du projet `Hackathon - Nuit de l'Info 2024` avec justifications des competences 1.4 et 1.5, structuration des preuves et tableaux E4/E5.
 - Refonte de la page `src/pages/VeilleTechno.jsx` pour clarifier la lecture : ajout de blocs "Theme", "Problematique", "Objectif", "Methode", renommage des sections en "Contexte", "Analyse", "Position personnelle", et explicitation de la section sources.
 - Amelioration de la lisibilite visuelle dans `src/style/VeilleTechno.css` avec des cartes de synthese en grille et un rendu mobile plus lisible.
+- Ajout du projet `Ecosysteme Brasserie (React & Flutter)` avec justifications des competences 1.2 (GLPI) et 1.5, preuves visuelles (login, dashboard, stocks), et tableaux E4/E5.
+- Ajout du projet `Gestion BDD Tour de France` avec justifications des competences 1.1 et 1.4, preuves (MCD + presentation specs), et tableaux E4/E5.
+- Ajout du projet `Projet SISR - Deploiement GLPI & Infrastructure` avec justification de la competence 1.2, preuve GLPI helpdesk, references GLPI et tableaux E4/E5.
+- Ajout des nouvelles preuves d'images dans `src/img` : brasserie ecosysteme, Tour de France BDD et SISR GLPI.
+- Enrichissement des stages dans `src/data/stagesData.js` : resumes complets, justifications des competences (1.1/1.3/1.4/1.5/1.6), preuves visuelles, sources techniques et tableaux E4/E5 pour Ekeep-It et SNCF.
+- Mise a jour de `src/pages/StageDetail.jsx` pour afficher les sections detaillees : justifications, preuves/traces, sources techniques et tableaux de competences associes.
+- Ajout des styles de lisibilite dans `src/style/StageDetail.css` pour les cartes de preuves, listes de justifications et liens documentaires.
