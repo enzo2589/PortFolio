@@ -102,6 +102,21 @@ export default function ProjectDetail() {
                         </section>
                     )}
 
+                    {project.competencyTables && project.competencyTables.length > 0 && (
+                        <section className="project-section">
+                            <h2>Tableaux de competences associes</h2>
+                            <ul className="doc-links-list">
+                                {project.competencyTables.map((table, index) => (
+                                    <li key={index}>
+                                        <a href={table.url} target="_blank" rel="noopener noreferrer">
+                                            {table.label}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
+
                     {project.link && (
                         <section className="project-section">
                             <h2>Liens</h2>

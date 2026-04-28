@@ -5,6 +5,9 @@ import nuitinfo from '../img/nuitinfos.png';
 import todolist from '../img/todolist.png';
 import divinouzePreuvePresentation from '../img/divinouze-preuve-presentation.png';
 import divinouzePreuveAuth from '../img/divinouze-preuve-auth.png';
+import gestionBddCircuitsInterface from '../img/gestion-bdd-circuits-interface.png';
+import gestionBddCircuitsSchema from '../img/gestion-bdd-circuits-schema.png';
+import workshop2024Preuve from '../img/workshop-2024-preuve.png';
 
 export const projectsData = [
     {
@@ -70,21 +73,70 @@ export const projectsData = [
             "https://www.php.net/manual/fr/features.sessions.php",
             "https://www.php.net/manual/fr/function.password-hash.php"
         ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
         link: "https://github.com/enzo2589/divinouze",
     },
     {
         id: 4,
-        title: "Projet base de données",
-        description: "création d'un site de voyage avec une base de données",
-        image: placeholderImage,
-        tags: ["HTML", "CSS", "PHP", "SQL", "looping"],
-        fullDescription: "création d'un site de voyage en binôme. Le projet inclut la gestion d'une base de données pour stocker les destinations, les offres et les réservations.",
+        title: "Gestion BDD Circuits Touristiques",
+        description: "Site responsive de reservation touristique avec backend PHP et base SQL",
+        image: gestionBddCircuitsInterface,
+        tags: ["HTML", "CSS", "PHP", "SQL", "PDO", "Git"],
+        fullDescription: "Ce projet, realise en binome, a consiste en la creation complete d'un site web responsive dedie a la reservation de circuits touristiques. Le coeur du developpement reposait sur la conception et l'exploitation d'une base de donnees SQL robuste pour gerer les destinations, les offres commerciales et les reservations clients. Le backend etait en PHP. Ce projet m'a permis d'allier logique de gestion des donnees et interface utilisateur fluide.",
         details: [
-            "Site de voyage responsive",
-            "Base de données SQL",
-            "Backend PHP",
-            "Système de réservation",
-            "Admin panel pour la gestion"
+            "Conception d'une base SQL pour destinations, offres et reservations",
+            "Developpement d'un backend PHP pour la logique metier",
+            "Interface responsive pour l'utilisateur final",
+            "Panneau d'administration avec acces securise",
+            "Travail en binome avec suivi de version"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.1 Gerer le patrimoine informatique",
+                evidence: "Mise en place des niveaux d'habilitation dans le code PHP et la base SQL afin de securiser l'acces au panneau d'administration."
+            },
+            {
+                skill: "1.4 Travailler en mode projet",
+                evidence: "Organisation du travail en binome avec planification des taches et utilisation d'un systeme de gestion de versions pour collaborer et suivre l'avancement."
+            },
+            {
+                skill: "1.6 Organiser son developpement professionnel",
+                evidence: "Auto-formation sur les points techniques backend PHP/SQL via documentations et tutoriels pour resoudre les difficultes rencontrees."
+            }
+        ],
+        proofImages: [
+            {
+                src: gestionBddCircuitsInterface,
+                alt: "Interface de gestion des lieux a visiter"
+            },
+            {
+                src: gestionBddCircuitsSchema,
+                alt: "Schema de base de donnees des circuits touristiques"
+            }
+        ],
+        documentationLinks: [
+            "https://www.php.net/manual/fr/pdo.connections.php",
+            "https://www.php.net/manual/fr/reserved.variables.session.php",
+            "https://www.php.net/manual/fr/pdo.prepared-statements.php"
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
         ],
         link: "",
     },
@@ -138,17 +190,39 @@ export const projectsData = [
     },
     {
         id: 8,
-        title: "Workshop 2024",
-        description: "Atelier pratique 2024 couvrant les bases du développement",
-        image: placeholderImage,
-        tags: ["arduino"],
-        fullDescription: "Workshop 2024 : Le but etait de creer une machine de rube goldberg dans une boite en carton a l'aide d'arduino et de capteurs divers. Un atelier pratique pour maîtriser les bases du développement web et des concepts fondamentaux. ",
+        title: "Workshop 2024 - Machine de Rube Goldberg & IoT",
+        description: "Projet d'equipe Arduino/capteurs avec integration web iterative",
+        image: workshop2024Preuve,
+        tags: ["Arduino", "Capteurs", "IoT", "HTML", "CSS", "JavaScript"],
+        fullDescription: "Dans le cadre du Workshop 2024, j'ai participe a la conception et a la realisation d'une machine de Rube Goldberg interactive, confinee dans une boite en carton. Ce projet melait electronique et programmation avec des microcontroleurs Arduino et differents capteurs. L'objectif etait de maitriser l'integration materielle tout en consolidant les bases du developpement web en connectant les capteurs a une interface. Realise en equipe, le projet s'est appuye sur une demarche iterative avec entraide, retours continus et amelioration progressive.",
         details: [
-            "Fundamentals du développement web",
-            "Pratique sur des projets réels",
-            "Méthodologies de développement",
-            "Travail en équipe",
-            "Retours et améliorations continus"
+            "Conception et integration d'une machine de Rube Goldberg",
+            "Utilisation d'Arduino et de capteurs en environnement reel",
+            "Connexion entre partie materielle et interface web",
+            "Travail d'equipe avec organisation iterative",
+            "Amelioration continue basee sur les retours"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.4 Travailler en mode projet",
+                evidence: "Participation active a l'analyse des objectifs, planification des activites personnelles et coordination entre la partie web et la partie materielle (Arduino). Suivi regulier de l'avancement pour analyser les ecarts et ameliorer la solution."
+            }
+        ],
+        proofImages: [
+            {
+                src: workshop2024Preuve,
+                alt: "Mise en oeuvre technique pendant le Workshop 2024"
+            }
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
         ],
         link: "",   
     },

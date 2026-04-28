@@ -83,3 +83,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Integration de 2 preuves visuelles (`src/img/divinouze-preuve-presentation.png` et `src/img/divinouze-preuve-auth.png`) affichees dans la section "Preuves / Traces".
 - Ajout d'une section "Sources techniques consultees" (FileZilla, sessions PHP, password_hash) dans la fiche projet.
 - Mise a jour de l'affichage de `src/pages/ProjectDetail.jsx` et du style associe `src/style/ProjectDetail.css` pour presenter proprement les preuves et les justifications.
+- Adaptation du projet `Workshop 2024 - Machine de Rube Goldberg & IoT` avec texte complet, justification de la competence 1.4 et ajout de la preuve visuelle `src/img/workshop-2024-preuve.png`.
+- Adaptation du projet `Gestion BDD Circuits Touristiques` avec resume, justifications des competences 1.1/1.4/1.6, deux preuves visuelles (`src/img/gestion-bdd-circuits-interface.png`, `src/img/gestion-bdd-circuits-schema.png`) et liens de documentation PHP/SQL.
+- Ajout des deux tableaux de competences (E4 et E5) dans les fiches projets Divinouz, Workshop 2024 et Gestion BDD, via une nouvelle section "Tableaux de competences associes" dans `src/pages/ProjectDetail.jsx`.
