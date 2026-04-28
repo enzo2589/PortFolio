@@ -1,5 +1,5 @@
 .veille-techno-container {
-    padding-top: 72px;
+    padding-top: 0;
     min-height: 100vh;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
@@ -183,6 +183,13 @@
     flex-grow: 1;
 }
 
+.item-cta {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #7c5ffd;
+    font-weight: 700;
+}
+
 .veille-techno-footer {
     text-align: center;
     padding-top: 2rem;
@@ -192,7 +199,7 @@
 /* Responsive Design */
 @media (max-width: 768px) {
     .veille-techno-container {
-        padding-top: 72px;
+        padding-top: 0;
     }
 
     .veille-techno-content {

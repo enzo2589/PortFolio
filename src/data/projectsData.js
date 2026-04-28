@@ -1,6 +1,5 @@
 import placeholderImage from '../img/image1.jpeg';
 import imgportfolio from '../img/portfolio.png';
-import imgstage from '../img/image3.jpeg';
 import divinouze from '../img/brasserie_logo.png';
 import nuitinfo from '../img/nuitinfos.png';
 import todolist from '../img/todolist.png';
@@ -35,22 +34,6 @@ export const projectsData = [
             "Backend en PHP"
         ],
         link: "https://github.com/enzo2589/divinouze",
-    },
-    {
-        id: 3,
-        title: "Stage",
-        description: "participation au développement de my-uuu.fr",
-        image: imgstage,
-        tags: ["React-js", "next-js", "Java", "Spring Boot", "github", "agile"],
-        fullDescription: "Lors de mon stage, j'ai participé au développement de la plateforme my-uuu.fr. Ce projet m'a permis de travailler en équipe avec la méthode agile, d'apprendre Next.js, Spring Boot et de pratiquer les méthodologies agiles.",
-        details: [
-            "Plateforme de gestion d'utilisateurs",
-            "Stack moderne : React-js / Next-js",
-            "Backend Java avec Spring Boot",
-            "Méthodologie Agile/Scrum",
-            "Collaboration en équipe avec GitHub"
-        ],
-        link: "https://my-uuu.fr",
     },
     {
         id: 4,

@@ -1,0 +1,101 @@
+.presentation-section {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 0 2rem 4rem;
+}
+
+.presentation-content {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f1ff 100%);
+    border: 1px solid #ece6ff;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(17, 12, 46, 0.08);
+}
+
+.presentation-badge {
+    display: inline-block;
+    margin: 0;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background: #f0eeff;
+    color: #5f47d1;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.presentation-intro h1 {
+    margin: 0.75rem 0 1rem 0;
+    font-size: 2.4rem;
+    color: #1b1635;
+}
+
+.presentation-intro p {
+    margin: 0.75rem 0;
+    line-height: 1.7;
+    color: #3d3a56;
+}
+
+.presentation-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary {
+    background: #7c5ffd;
+    color: #fff;
+    box-shadow: 0 8px 18px rgba(124, 95, 253, 0.25);
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #332d58;
+    border: 1px solid #ddd7f8;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    transform: translateY(-2px);
+}
+
+.presentation-detail {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 14px;
+    background: #fff;
+    border: 1px solid #ece6ff;
+}
+
+.presentation-detail h2 {
+    margin-top: 0;
+    color: #261f49;
+}
+
+.presentation-detail p {
+    color: #3d3a56;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .presentation-section {
+        padding: 0 1rem 2rem;
+    }
+
+    .presentation-content {
+        padding: 1.5rem;
+    }
+
+    .presentation-intro h1 {
+        font-size: 1.9rem;
+    }
+}

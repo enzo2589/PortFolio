@@ -1,7 +1,28 @@
 import { Link } from 'react-router-dom';
 import '../style/Contact.css';
+import { useMemo, useState } from 'react';
 
 export default function Contact() {
+    const [form, setForm] = useState({ name: '', email: '', message: '' });
+
+    const mailtoHref = useMemo(() => {
+        const subject = encodeURIComponent(`Nouveau message portfolio - ${form.name || 'Visiteur'}`);
+        const body = encodeURIComponent(
+            `Nom : ${form.name}\nEmail : ${form.email}\n\nMessage :\n${form.message}`
+        );
+        return `mailto:enzo.deyrich@ecoles-epsi.net?subject=${subject}&body=${body}`;
+    }, [form]);
+
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setForm((prev) => ({ ...prev, [name]: value }));
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        window.location.href = mailtoHref;
+    };
+
     return (
         <main className="contact-container">
             <div className="contact-header">
@@ -11,11 +32,10 @@ export default function Contact() {
             <div className="contact-content">
                 <h1 className="contact-title">Contactez-moi</h1>
                 <p className="contact-subtitle">
-                    N'hésitez pas à me contacter pour discuter de vos projets ou pour toute collaboration.
+                    N&apos;hésitez pas a me contacter pour discuter de vos projets ou pour toute collaboration.
                 </p>
 
                 <div className="contact-grid">
-                    {/* LinkedIn */}
                     <a 
                         href="https://www.linkedin.com/in/enzo-deyrich/" 
                         target="_blank" 
@@ -28,11 +48,10 @@ export default function Contact() {
                             </svg>
                         </div>
                         <h3>LinkedIn</h3>
-                        <p>Connectez-moi sur LinkedIn</p>
+                        <p>Connectons-nous sur LinkedIn</p>
                         <span className="contact-link-arrow">Visiter →</span>
                     </a>
 
-                    {/* GitHub */}
                     <a 
                         href="https://github.com/enzo2589" 
                         target="_blank" 
@@ -48,33 +67,30 @@ export default function Contact() {
                         <p>Découvrez mes projets</p>
                         <span className="contact-link-arrow">Visiter →</span>
                     </a>
-
-                    {/* CV */}
-                    <a 
-                        href="/cv.pdf" 
-                        download
-                        className="contact-card cv-card"
-                    >
-                        <div className="contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                                <polyline points="14 2 14 8 20 8"></polyline>
-                                <line x1="12" y1="11" x2="12" y2="17"></line>
-                                <line x1="9" y1="14" x2="15" y2="14"></line>
-                            </svg>
-                        </div>
-                        <h3>Mon CV</h3>
-                        <p>Téléchargez mon CV complet</p>
-                        <span className="contact-link-arrow">Télécharger →</span>
-                    </a>
                 </div>
 
-                {/* Email Section */}
                 <section className="email-section">
                     <h2>Ou envoyez-moi un email</h2>
                     <a href="mailto:enzo.deyrich@ecoles-epsi.net" className="email-link">
                         enzo.deyrich@ecoles-epsi.net
                     </a>
+                </section>
+
+                <section className="contact-form-section">
+                    <h2>Formulaire de contact</h2>
+                    <p>Ce formulaire ouvre votre client mail avec les champs pre-remplis.</p>
+                    <form className="contact-form" onSubmit={handleSubmit}>
+                        <label htmlFor="name">Nom</label>
+                        <input id="name" name="name" type="text" required value={form.name} onChange={handleChange} />
+
+                        <label htmlFor="email">Email</label>
+                        <input id="email" name="email" type="email" required value={form.email} onChange={handleChange} />
+
+                        <label htmlFor="message">Message</label>
+                        <textarea id="message" name="message" rows="6" required value={form.message} onChange={handleChange} />
+
+                        <button type="submit">Envoyer</button>
+                    </form>
                 </section>
 
             </div>

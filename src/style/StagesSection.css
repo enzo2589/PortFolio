@@ -1,0 +1,83 @@
+.stages-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.stages-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.stages-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.stages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+
+.stage-card {
+    background: #fff;
+    border: 1px solid #ece6ff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(17, 12, 46, 0.06);
+}
+
+.stage-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    color: #261f49;
+}
+
+.stage-period {
+    margin-top: 0;
+    color: #6b6492;
+    font-weight: 600;
+}
+
+.stage-card p {
+    line-height: 1.65;
+    color: #3d3a56;
+}
+
+.stage-card h4 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: #332d58;
+}
+
+.stage-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.stage-tag {
+    background: #f0eeff;
+    color: #513cae;
+    border-radius: 999px;
+    padding: 0.3rem 0.65rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.stage-card ul {
+    margin: 0.5rem 0 0 1rem;
+    padding: 0;
+}
+
+.stage-card li {
+    margin-bottom: 0.4rem;
+    color: #3d3a56;
+}
+
+@media (max-width: 768px) {
+    .stages-section {
+        padding: 3rem 1rem;
+    }
+}

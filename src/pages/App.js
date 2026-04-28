@@ -1,14 +1,13 @@
 import Certifications from '../components/certifications';
 import Header from '../components/Header';
-import Homeheader from '../components/Home_header';
-import MediaSlider from '../components/MediaSlider';
-import Projet from '../components/Projet';
+import PresentationSection from '../components/PresentationSection';
 import ProjectDetail from './ProjectDetail';
 import Contact from './Contact';
 import Skills from './Skills';
-import SkillsSection from '../components/SkillsSection';
 import VeilleTechno from './VeilleTechno';
-import VeilleTechnoSection from '../components/VeilleTechnoSection';
+import ProjectsPage from './ProjectsPage';
+import StagesPage from './StagesPage';
+import StageDetail from './StageDetail';
 import '../style/index.css';
 import { Route, Routes } from 'react-router-dom';
 
@@ -17,21 +16,20 @@ function App() {
         <>
             <header className="back-header">
                 <Header />
-                <Homeheader />
             </header>
 
             <Routes>
                 <Route path="/" element={
                     <main>
-                        <MediaSlider />
-                        <Projet />
-                        <VeilleTechnoSection />
+                        <PresentationSection />
                         <Certifications />
-                        <SkillsSection />
                     </main>
                 } />
+                <Route path="/projets" element={<ProjectsPage />} />
                 <Route path="/projet/:id" element={<ProjectDetail />} />
                 <Route path="/skills" element={<Skills />} />
+                <Route path="/stages" element={<StagesPage />} />
+                <Route path="/stages/:id" element={<StageDetail />} />
                 <Route path="/veille-techno" element={<VeilleTechno />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="*" element={<div>404 Page Not Found</div>} />

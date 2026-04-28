@@ -2,68 +2,56 @@ import { Link } from 'react-router-dom';
 import '../style/VeilleTechno.css';
 
 export default function VeilleTechno() {
-    const veilleTechnoTheme = {
-        theme: "IA & developpement augmenté",
-        description: "Analyse de l'impact de l'Intelligence Artificielle générative sur le métier de développeur : outils, productivité et enjeux éthiques.",
-        items: [
-            {
-                type: "article",
-                title: "GitHub Octoverse : L'état des lieux",
-                description: "Rapport annuel de référence montrant que 92% des développeurs utilisent déjà des outils d'IA. Une adoption massive qui transforme le standard de l'industrie.",
-                url: "https://octoverse.github.com/",
-                date: "Nov 2024",
-            },
-            {
-                type: "article",
-                title: "Devin : Le premier ingénieur IA",
-                description: "Annonce de Cognition Labs sur 'Devin', la première IA capable de gérer un projet de A à Z de manière autonome (codage, débogage, déploiement).",
-                url: "https://www.cognition-labs.com/blog",
-                date: "Mar 2024",
-            },
-            {
-                type: "lien",
-                title: "Cursor Editor",
-                description: "Découverte de l'IDE 'Cursor', un fork de VS Code conçu pour l'IA ('AI Native'). Il permet de refactoriser et générer du code bien plus vite que Copilot.",
-                url: "https://cursor.sh/",
-                date: "En cours",
-            },
-            {
-                type: "video",
-                title: "La fin du métier de développeur ?",
-                description: "Débat sur la chaîne Underscore_ : analyse des risques pour l'emploi et de l'évolution vers un rôle d'architecte/superviseur d'IA.",
-                url: "https://www.youtube.com/@Underscore_",
-                date: "Fév 2024",
-            },
-            {
-                type: "article",
-                title: "Samsung bannit ChatGPT (Sécurité)",
-                description: "Étude de cas sur les risques de fuite de données confidentielles lorsque le code propriétaire est envoyé aux serveurs d'OpenAI.",
-                url: "https://www.bloomberg.com/news/articles/2023-05-02/samsung-bans-chatgpt-and-other-generative-ai-use-by-staff-after-leak",
-                date: "Mai 2023",
-            },
-            {
-                type: "lien",
-                title: "V0.dev (Génération UI)",
-                description: "Outil de Vercel permettant de générer des interfaces React/Tailwind complètes à partir de simples prompts textuels.",
-                url: "https://v0.dev/",
-                date: "En cours",
-            },
-            {
-                type: "video",
-                title: "Coder avec l'IA (Benjamin Code)",
-                description: "Démonstration pratique des capacités et des limites des assistants IA actuels. Test de productivité en conditions réelles.",
-                url: "https://www.youtube.com/@BenjaminCode",
-                date: "Jan 2024",
-            },
-            {
-                type: "article",
-                title: "L'enquête Stack Overflow 2024",
-                description: "Les outils d'IA préférés des développeurs et leur sentiment (productivité vs peur du remplacement) analysés par la communauté.",
-                url: "https://survey.stackoverflow.co/",
-                date: "Mai 2024",
-            },
-        ],
-    };
+    const resources = [
+        {
+            type: 'article',
+            title: 'GitHub x Accenture : impact de Copilot en entreprise',
+            description:
+                "Etude sur l'impact de Copilot : adoption, satisfaction et gains mesurables sur le flux de developpement.",
+            url: 'https://github.blog/news-insights/research/research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture',
+            date: '2024'
+        },
+        {
+            type: 'article',
+            title: 'Stack Overflow Developer Survey 2024 (section IA)',
+            description:
+                "Donnees communautaires sur l'adoption des assistants IA, la confiance dans les reponses et la perception du risque de remplacement.",
+            url: 'https://survey.stackoverflow.co/2024/ai/',
+            date: '2024'
+        },
+        {
+            type: 'article',
+            title: 'McKinsey - Unleashing developer productivity with generative AI',
+            description:
+                'Analyse des gains de productivite selon les types de taches (generation, documentation, refactoring) et des limites sur les sujets complexes.',
+            url: 'https://www.mckinsey.com/capabilities/tech-and-ai/our-insights/unleashing-developer-productivity-with-generative-ai',
+            date: '2023'
+        },
+        {
+            type: 'article',
+            title: 'Google Cloud DORA 2024 et IA en developpement',
+            description:
+                "Recherche DORA sur l'usage de l'IA dans le travail des equipes software et ses effets sur la productivite individuelle.",
+            url: 'https://cloud.google.com/blog/products/ai-machine-learning/sharing-new-dora-research-for-gen-ai-in-software-development',
+            date: '2024'
+        },
+        {
+            type: 'video',
+            title: 'Google I/O - Accelerate your development with the Gemini API',
+            description:
+                'Presentation video officielle autour des usages Gemini pour accelerer les workflows de developpement.',
+            url: 'https://io.google/2025/explore/pa-keynote-3',
+            date: '2025'
+        },
+        {
+            type: 'video',
+            title: 'Gemini Code Assist for individuals',
+            description:
+                'Ressource Google Developers sur Gemini Code Assist (IDE, generation de code, assistance contextuelle).',
+            url: 'https://developers.google.com/gemini-code-assist',
+            date: '2025'
+        }
+    ];
 
     const getItemIcon = (type) => {
         switch(type) {
@@ -78,7 +66,6 @@ export default function VeilleTechno() {
         switch(type) {
             case 'article': return 'Article';
             case 'video': return 'Vidéo';
-            case 'lien': return 'Outil';
             default: return 'Ressource';
         }
     };
@@ -93,22 +80,55 @@ export default function VeilleTechno() {
                 <section className="veille-techno-hero">
                     <h1 className="veille-techno-title">Ma Veille Technologique</h1>
                     <p className="veille-techno-subtitle">
-                        Une exploration continue des technologies qui redéfinissent notre métier.
+                        L&apos;impact de l&apos;IA sur le metier de developpeur : remplacement ou assistance indispensable ?
                     </p>
                 </section>
 
                 <section className="veille-techno-themes">
                     <div className="theme-section">
-                        <div className="theme-header">
-                            <span className="theme-icon">{veilleTechnoTheme.icon}</span>
-                            <div>
-                                <h2 className="theme-title">{veilleTechnoTheme.theme}</h2>
-                                <p className="theme-description">{veilleTechnoTheme.description}</p>
-                            </div>
-                        </div>
+                        <h2 className="theme-title">Introduction</h2>
+                        <p className="theme-description">
+                            Les assistants IA comme GitHub Copilot ou Gemini changent deja le
+                            quotidien des developpeurs. Ils accelerent la production de code,
+                            aident a documenter, suggerent des correctifs et fluidifient
+                            certaines etapes de developpement. La question centrale n&apos;est pas
+                            seulement &quot;peuvent-ils coder ?&quot; mais surtout &quot;dans quelle mesure
+                            transforment-ils le role du developpeur ?&quot;.
+                        </p>
+
+                        <h2 className="theme-title">Arguments</h2>
+                        <p className="theme-description">
+                            <strong>1) Des gains de productivite reels :</strong> plusieurs
+                            etudes (GitHub, McKinsey, DORA) montrent un gain de vitesse sur les
+                            taches repetitives et sur la documentation.
+                        </p>
+                        <p className="theme-description">
+                            <strong>2) Pas d&apos;autonomie complete :</strong> l&apos;IA reste
+                            limitee sur la comprehension fine du contexte metier, les choix
+                            d&apos;architecture, la securite et la responsabilite finale du code.
+                        </p>
+                        <p className="theme-description">
+                            <strong>3) Evolution du metier :</strong> le developpeur devient
+                            davantage un pilote de systeme : cadrage, revue critique des sorties
+                            IA, validation, tests et priorisation.
+                        </p>
+                        <p className="theme-description">
+                            <strong>4) Risques a maitriser :</strong> fuite de donnees, dette
+                            technique, biais et confiance excessive. Ces outils demandent un
+                            cadre d&apos;usage strict (revues, tests, gouvernance).
+                        </p>
+
+                        <h2 className="theme-title">Conclusion</h2>
+                        <p className="theme-description">
+                            A court et moyen terme, ces outils ne remplacent pas les
+                            developpeurs. Ils deviennent des assistants puissants qui augmentent
+                            la vitesse d&apos;execution, a condition d&apos;etre utilises avec rigueur.
+                            La valeur humaine reste decisive pour comprendre le besoin, garantir
+                            la qualite et prendre les decisions techniques.
+                        </p>
 
                         <div className="items-list">
-                            {veilleTechnoTheme.items.map((item, index) => (
+                            {resources.map((item, index) => (
                                 <a 
                                     key={index}
                                     href={item.url}
@@ -123,6 +143,9 @@ export default function VeilleTechno() {
                                     </div>
                                     <h3 className="item-title">{item.title}</h3>
                                     <p className="item-description">{item.description}</p>
+                                    <span className="item-cta">
+                                        {item.type === 'video' ? 'Voir la video' : 'Lire l\'article'}
+                                    </span>
                                 </a>
                             ))}
                         </div>

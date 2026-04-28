@@ -1,44 +1,32 @@
 import '../style/Header.css';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
-    const location = useLocation();
-    const navigate = useNavigate();
-
-    const handleNavigation = (sectionId) => {
-        if (location.pathname === '/') {
-            const element = document.getElementById(sectionId);
-            if (element) {
-                element.scrollIntoView({ behavior: 'smooth' });
-            }
-        } else {
-            navigate('/', { replace: false });
-            setTimeout(() => {
-                const element = document.getElementById(sectionId);
-                if (element) {
-                    element.scrollIntoView({ behavior: 'smooth' });
-                }
-            }, 100);
-        }
-    };
+    const navClassName = ({ isActive }) => (isActive ? 'active' : '');
 
     return (
         <nav className="nav-header">
+            <NavLink to="/" className="brand">
+                Mon Portfolio
+            </NavLink>
             <ul>
                 <li>
-                    <a href="#projets" onClick={(e) => { e.preventDefault(); handleNavigation('projets'); }}>Projets</a>
+                    <NavLink to="/" className={navClassName}>Presentation</NavLink>
                 </li>
                 <li>
-                    <a href="#competences" onClick={(e) => { e.preventDefault(); handleNavigation('competences'); }}>Compétences</a>
+                    <NavLink to="/projets" className={navClassName}>Projets</NavLink>
                 </li>
                 <li>
-                    <a href="#certifications" onClick={(e) => { e.preventDefault(); handleNavigation('certifications'); }}>Certifications</a>
+                    <NavLink to="/skills" className={navClassName}>Competences</NavLink>
                 </li>
                 <li>
-                    <Link to="/veille-techno">Veille Techno</Link>
+                    <NavLink to="/stages" className={navClassName}>Stages</NavLink>
                 </li>
                 <li>
-                    <Link to="/contact">Contact</Link>
+                    <NavLink to="/veille-techno" className={navClassName}>Veille Techno</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/contact" className={navClassName}>Contact</NavLink>
                 </li>
             </ul>
         </nav>

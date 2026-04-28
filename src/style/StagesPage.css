@@ -1,0 +1,54 @@
+.stages-page-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.stage-overview-card {
+    background: #fff;
+    border: 1px solid #ece6ff;
+    border-radius: 14px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 18px rgba(17, 12, 46, 0.06);
+}
+
+.stage-overview-card h2 {
+    margin: 0 0 0.5rem;
+    color: #261f49;
+}
+
+.stage-overview-period {
+    margin: 0.2rem 0;
+    color: #5d5691;
+    font-weight: 600;
+}
+
+.stage-overview-company {
+    margin-top: 0;
+    color: #6f6996;
+}
+
+.stage-overview-actions {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.stage-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background: #7c5ffd;
+    border-radius: 8px;
+    padding: 0.65rem 0.9rem;
+    font-weight: 600;
+}
+
+.stage-link.secondary {
+    background: #f0eeff;
+    color: #4d3faf;
+}
