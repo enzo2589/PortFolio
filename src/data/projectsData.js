@@ -8,6 +8,13 @@ import divinouzePreuveAuth from '../img/divinouze-preuve-auth.png';
 import gestionBddCircuitsInterface from '../img/gestion-bdd-circuits-interface.png';
 import gestionBddCircuitsSchema from '../img/gestion-bdd-circuits-schema.png';
 import workshop2024Preuve from '../img/workshop-2024-preuve.png';
+import todolistPhpDbConfig from '../img/todolist-php-db-config.png';
+import todolistPhpPhpmyadmin from '../img/todolist-php-phpmyadmin.png';
+import workshop2025Preuve from '../img/workshop-2025-preuve.png';
+import supanoteUml from '../img/supanote-uml.png';
+import supanoteMobileList from '../img/supanote-mobile-list.png';
+import supanoteMobileAdd from '../img/supanote-mobile-add.png';
+import supanoteSupabase from '../img/supanote-supabase.png';
 
 export const projectsData = [
     {
@@ -158,33 +165,84 @@ export const projectsData = [
     },
     {
         id: 6,
-        title: "Todolist",
-        description: "création d'une todolist en php",
-        image: todolist,
-        tags: ["PHP"],
-        fullDescription: "Projet basique de création d'une liste de tâches (TODO list) en PHP. Ce projet m'a permis d'apprendre les concepts de base du développement back-end avec PHP et les bases de données.",
+        title: "To-Do List PHP (Environnement Local)",
+        description: "Application de gestion de taches CRUD en PHP/MySQL sur WAMP",
+        image: todolistPhpDbConfig,
+        tags: ["PHP", "MySQL", "WAMP", "CRUD", "phpMyAdmin"],
+        fullDescription: "Ce projet individuel a constitue ma premiere veritable immersion dans le developpement back-end avec PHP. L'objectif etait de concevoir une application de gestion de taches simple et intuitive. Deployee en environnement local avec WAMP, l'application met en pratique les operations CRUD : creation, modification, suppression et gestion des taches terminees.",
         details: [
-            "Créer des tâches",
-            "Modifier les tâches",
-            "Supprimer les tâches",
-            "Marquer comme complétées",
-            "Interface simple et intuitive"
+            "Configuration de l'environnement local WAMP",
+            "Connexion PHP/MySQL pour la persistance des taches",
+            "Implementation complete des operations CRUD",
+            "Gestion de la base de donnees avec phpMyAdmin",
+            "Interface simple orientee productivite"
         ],
-        link: "",   
+        competencyJustifications: [
+            {
+                skill: "1.1 Gerer le patrimoine informatique",
+                evidence: "Configuration et administration d'un environnement de developpement local avec WAMP, puis conception de la structure de base MySQL pour gerer les donnees actives (ajout, mise a jour et suppression des taches)."
+            }
+        ],
+        proofImages: [
+            {
+                src: todolistPhpDbConfig,
+                alt: "Configuration de la connexion a la base dans db.php"
+            },
+            {
+                src: todolistPhpPhpmyadmin,
+                alt: "Gestion de la base To-Do List dans phpMyAdmin"
+            }
+        ],
+        documentationLinks: [
+            "https://github.com/enzo2589/todolist"
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
+        link: "https://github.com/enzo2589/todolist",
     },
     {
         id: 7,
-        title: "Workshop 2025",
-        description: "Atelier pratique 2025 avec les dernières technologies",
-        image: placeholderImage,
-        tags: ["esp 8266", "raspberry pi", "arduino"],
-        fullDescription: "Workshop 2025 : l'objectif etait de recreer des gadjets de james bond nous avons donc creer une boite a cigare dans laquele chaque cigare avait une fonctionalité différente comme un cigare detecteur de mouvement a l'aide d'un arduino , un cigare camera avec un raspberry pi, ou encore un maroudeur avec un esp .",
+        title: "Workshop 2025 - Boite a cigares James Bond (IoT)",
+        description: "Projet IoT equipe avec Arduino, Raspberry Pi et ESP8266",
+        image: workshop2025Preuve,
+        tags: ["IoT", "Arduino", "Raspberry Pi", "ESP8266", "Prototypage"],
+        fullDescription: "Dans le cadre du Workshop 2025, notre groupe a releve un defi technique et creatif : concevoir des gadgets connectes inspires de l'univers James Bond. Nous avons fabrique une boite a cigares trompe-l'oeil ou chaque cigare integrait une fonction secrete (detecteur de mouvement sur Arduino, mini-camera sur Raspberry Pi, outil reseau via ESP8266). Ce format hands-on nous a permis d'iterer rapidement avec feedback et mentoring continu.",
         details: [
-            "Apprentissage des nouveautés 2025",
-            "Pratique sur les frameworks modernes",
-            "Exercices hands-on",
-            "Collaboration en groupe",
-            "Feedback et mentoring"
+            "Prototype IoT thematique et fonctionnel",
+            "Integration de composants heterogenes en temps contraint",
+            "Repartition des roles selon l'expertise materielle/logicielle",
+            "Cycles de tests et ajustements rapides",
+            "Travail collectif accompagne par mentoring"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.4 Travailler en mode projet",
+                evidence: "Participation active a l'analyse des objectifs et a l'organisation du projet. Planification precise des taches face a la diversite des composants (Arduino, Raspberry Pi, ESP8266), suivi des indicateurs de progression et reajustement de la conception en temps reel."
+            }
+        ],
+        proofImages: [
+            {
+                src: workshop2025Preuve,
+                alt: "Equipe projet Workshop 2025"
+            }
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
         ],
         link: "",   
     },
@@ -225,6 +283,66 @@ export const projectsData = [
             }
         ],
         link: "",   
+    },
+    {
+        id: 9,
+        title: "Application Mobile Supanote (Flutter)",
+        description: "Application mobile To-Do avec comptes utilisateurs et priorites",
+        image: supanoteMobileList,
+        tags: ["Flutter", "Dart", "Supabase", "GitHub", "Mobile"],
+        fullDescription: "Dans le cadre d'une epreuve du BTS SIO, j'ai concu et developpe en totale autonomie Supanote, une application mobile de prise de notes type To-Do list. Developpee avec Flutter, elle integre la creation de comptes utilisateurs et la gestion des niveaux d'importance des taches. Le code source a ete heberge et versionne sur GitHub pour garantir un suivi rigoureux du developpement.",
+        details: [
+            "Developpement mobile cross-platform avec Flutter",
+            "Comptes utilisateurs et gestion des droits d'acces",
+            "Gestion des priorites de taches dans l'interface",
+            "Persistance des donnees avec Supabase",
+            "Tests sur emulateur puis generation de l'application"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.1 Gerer le patrimoine informatique",
+                evidence: "Suivi, sauvegarde et evolution du code avec Git/GitHub. Mise en place de niveaux d'habilitation pour securiser l'acces aux notes utilisateur, avec stockage en base via Supabase."
+            },
+            {
+                skill: "1.5 Mettre a disposition des utilisateurs un service informatique",
+                evidence: "Realisation de tests d'integration et d'acceptation sur emulateurs (inscription, ajout de note, changement de priorite), puis generation de l'application pour une installation sur smartphone."
+            }
+        ],
+        proofImages: [
+            {
+                src: supanoteMobileList,
+                alt: "Ecran principal de Supanote"
+            },
+            {
+                src: supanoteMobileAdd,
+                alt: "Ajout d'une tache dans Supanote"
+            },
+            {
+                src: supanoteSupabase,
+                alt: "Base de donnees Supabase de l'application"
+            },
+            {
+                src: supanoteUml,
+                alt: "Schema de donnees Supanote"
+            }
+        ],
+        documentationLinks: [
+            "https://github.com/enzo2589/App-mobile-flutter",
+            "https://docs.flutter.dev/get-started/install",
+            "https://docs.flutter.dev/ui/widgets",
+            "https://supabase.com/docs"
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
+        link: "https://github.com/enzo2589/App-mobile-flutter",
     },
 ];
 
