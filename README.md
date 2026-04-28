@@ -75,3 +75,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Remplacement de l'ancien tableau des competences par le nouveau PDF fourni : `public/tableau-competences-epreuve-e4.pdf`.
 - Mise a jour de la constante de telechargement dans `src/constants/downloads.js` vers `TABLEAU_COMPETENCES_E4_PDF`.
 - Mise a jour des liens de consultation/telechargement et des libelles "Epreuve E4" dans `src/pages/Skills.jsx` et `src/components/SkillsSection.jsx`.
+- Correction suite a erreur : remplacement par le PDF `public/tableau-synthese-competences-e5-annexe8.pdf`.
+- Retour de la constante vers `TABLEAU_SYNTHESE_COMPETENCES_E5_PDF` dans `src/constants/downloads.js`.
+- Mise a jour des libelles et liens vers "Annexe 8 - Epreuve E5" dans `src/pages/Skills.jsx` et `src/components/SkillsSection.jsx`.
+- Adaptation du projet Divinouz dans `src/data/projectsData.js` avec un nouveau texte structure (resume, contexte technique et travail en duo).
+- Ajout d'une justification explicite des competences E4/E5 (1.1, 1.4, 1.5, 1.6) sur la page detail projet.
+- Integration de 2 preuves visuelles (`src/img/divinouze-preuve-presentation.png` et `src/img/divinouze-preuve-auth.png`) affichees dans la section "Preuves / Traces".
+- Ajout d'une section "Sources techniques consultees" (FileZilla, sessions PHP, password_hash) dans la fiche projet.
+- Mise a jour de l'affichage de `src/pages/ProjectDetail.jsx` et du style associe `src/style/ProjectDetail.css` pour presenter proprement les preuves et les justifications.

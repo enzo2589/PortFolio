@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { skillsData } from '../data/skillsData';
-import { TABLEAU_COMPETENCES_E4_PDF } from '../constants/downloads';
+import { TABLEAU_SYNTHESE_COMPETENCES_E5_PDF } from '../constants/downloads';
 import '../style/Skills.css';
 
 export default function Skills() {
@@ -14,7 +14,7 @@ export default function Skills() {
                 <section className="skills-hero">
                     <h1 className="skills-title">Mes Compétences</h1>
                     <p className="skills-subtitle">
-                        Grille de competences BTS SIO (Epreuve E4)
+                        Grille de competences BTS SIO (Annexe 8 - Epreuve E5)
                     </p>
                 </section>
 
@@ -39,7 +39,7 @@ export default function Skills() {
 
                 <div className="skills-footer actions">
                     <a
-                        href={TABLEAU_COMPETENCES_E4_PDF}
+                        href={TABLEAU_SYNTHESE_COMPETENCES_E5_PDF}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="skills-download-link"
@@ -47,7 +47,7 @@ export default function Skills() {
                         Consulter le tableau de synthèse (PDF)
                     </a>
                     <a
-                        href={TABLEAU_COMPETENCES_E4_PDF}
+                        href={TABLEAU_SYNTHESE_COMPETENCES_E5_PDF}
                         download
                         className="skills-download-link"
                     >

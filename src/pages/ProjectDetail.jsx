@@ -52,13 +52,55 @@ export default function ProjectDetail() {
                     </section>
 
                     <section className="project-section">
-                        <h2>Technologias utilisées</h2>
+                        <h2>Technologies utilisees</h2>
                         <div className="technologies">
                             {project.tags.map((tag, index) => (
                                 <span key={index} className="tech-tag">{tag}</span>
                             ))}
                         </div>
                     </section>
+
+                    {project.competencyJustifications && project.competencyJustifications.length > 0 && (
+                        <section className="project-section">
+                            <h2>Justification des competences (E4/E5)</h2>
+                            <ul className="competency-list">
+                                {project.competencyJustifications.map((item, index) => (
+                                    <li key={index}>
+                                        <strong>{item.skill} :</strong> {item.evidence}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
+
+                    {project.proofImages && project.proofImages.length > 0 && (
+                        <section className="project-section">
+                            <h2>Preuves / Traces</h2>
+                            <div className="proof-grid">
+                                {project.proofImages.map((image, index) => (
+                                    <figure key={index} className="proof-item">
+                                        <img src={image.src} alt={image.alt} />
+                                        <figcaption>{image.alt}</figcaption>
+                                    </figure>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
+                    {project.documentationLinks && project.documentationLinks.length > 0 && (
+                        <section className="project-section">
+                            <h2>Sources techniques consultees</h2>
+                            <ul className="doc-links-list">
+                                {project.documentationLinks.map((url, index) => (
+                                    <li key={index}>
+                                        <a href={url} target="_blank" rel="noopener noreferrer">
+                                            {url}
+                                        </a>
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
 
                     {project.link && (
                         <section className="project-section">

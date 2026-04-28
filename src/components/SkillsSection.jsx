@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../style/SkillsSection.css';
 import { skillsData } from '../data/skillsData';
-import { TABLEAU_COMPETENCES_E4_PDF } from '../constants/downloads';
+import { TABLEAU_SYNTHESE_COMPETENCES_E5_PDF } from '../constants/downloads';
 
 export default function SkillsSection() {
     return (
@@ -9,7 +9,7 @@ export default function SkillsSection() {
             <div className="skills-section-content">
                 <h2 className="skills-section-title">Mes Compétences</h2>
                 <p className="skills-section-description">
-                    Compétences issues du référentiel BTS SIO (Epreuve E4).
+                    Compétences issues du référentiel BTS SIO (Annexe 8 - Epreuve E5).
                 </p>
 
                 <div className="skills-preview">
@@ -27,7 +27,7 @@ export default function SkillsSection() {
                     </Link>
 
                     <a
-                        href={TABLEAU_COMPETENCES_E4_PDF}
+                        href={TABLEAU_SYNTHESE_COMPETENCES_E5_PDF}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="skills-cta-button"
@@ -36,7 +36,7 @@ export default function SkillsSection() {
                     </a>
 
                     <a
-                        href={TABLEAU_COMPETENCES_E4_PDF}
+                        href={TABLEAU_SYNTHESE_COMPETENCES_E5_PDF}
                         download
                         className="skills-cta-button secondary"
                     >
