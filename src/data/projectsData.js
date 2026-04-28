@@ -15,6 +15,11 @@ import supanoteUml from '../img/supanote-uml.png';
 import supanoteMobileList from '../img/supanote-mobile-list.png';
 import supanoteMobileAdd from '../img/supanote-mobile-add.png';
 import supanoteSupabase from '../img/supanote-supabase.png';
+import ecommerceReactCode from '../img/ecommerce-react-code.png';
+import ecommerceReactUi from '../img/ecommerce-react-ui.png';
+import demineurPythonPreuve from '../img/demineur-python-preuve.png';
+import wordpressRestaurantFront from '../img/wordpress-restaurant-front.png';
+import wordpressRestaurantAdmin from '../img/wordpress-restaurant-admin.png';
 
 export const projectsData = [
     {
@@ -343,6 +348,136 @@ export const projectsData = [
             }
         ],
         link: "https://github.com/enzo2589/App-mobile-flutter",
+    },
+    {
+        id: 10,
+        title: "Site E-Commerce (React & API)",
+        description: "Interface e-commerce React connectee a une API externe",
+        image: ecommerceReactUi,
+        tags: ["React", "API", "JavaScript", "Git", "GitHub"],
+        fullDescription: "Realise dans le cadre de ma formation React, ce projet consiste en la creation d'une interface e-commerce moderne et dynamique. L'architecture est orientee composants et l'application interroge une API externe pour recuperer en temps reel le catalogue, les prix et les images des produits. L'integralite du code source a ete versionnee et sauvegardee sur GitHub.",
+        details: [
+            "Architecture React basee sur des composants reutilisables",
+            "Consommation d'API externe pour les donnees produits",
+            "Mise a jour dynamique de l'interface",
+            "Gestion du code source avec Git et depot distant",
+            "Interface utilisateur orientee experience e-commerce"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.1 Gerer le patrimoine informatique",
+                evidence: "Versionnement rigoureux des composants React avec Git et sauvegarde du patrimoine logiciel sur GitHub. Recensement et exploitation d'une ressource numerique tierce (API externe) pour alimenter l'application."
+            }
+        ],
+        proofImages: [
+            {
+                src: ecommerceReactUi,
+                alt: "Interface du site e-commerce React"
+            },
+            {
+                src: ecommerceReactCode,
+                alt: "Code React de detail produit avec appel API"
+            }
+        ],
+        documentationLinks: [
+            "https://github.com/enzo2589/E-commerce"
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
+        link: "https://github.com/enzo2589/E-commerce",
+    },
+    {
+        id: 11,
+        title: "Jeu du Demineur en Python",
+        description: "Projet algorithmique Python avec grille 2D et mines aleatoires",
+        image: demineurPythonPreuve,
+        tags: ["Python", "Algorithmique", "Random", "GitHub"],
+        fullDescription: "Ce projet d'entrainement a consiste a recreer le jeu du Demineur en Python. J'ai concu la logique complete : generation d'une grille en tableau a deux dimensions, placement aleatoire des mines et calcul dynamique des mines adjacentes. Le code a ensuite ete publie sur GitHub.",
+        details: [
+            "Generation d'une grille 2D",
+            "Placement aleatoire des mines",
+            "Calcul des cases adjacentes",
+            "Boucle de jeu et gestion des coups",
+            "Publication du script sur GitHub"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.6 Organiser son developpement professionnel",
+                evidence: "Utilisation du projet pour renforcer l'environnement d'apprentissage personnel en algorithmique Python. Publication et documentation du projet sur un depot public GitHub pour developper l'identite professionnelle."
+            }
+        ],
+        proofImages: [
+            {
+                src: demineurPythonPreuve,
+                alt: "Execution et code du Demineur en Python"
+            }
+        ],
+        documentationLinks: [
+            "https://github.com/enzo2589/exercice_python",
+            "https://docs.python.org/fr/3/tutorial/datastructures.html",
+            "https://docs.python.org/fr/3/library/random.html"
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
+        link: "https://github.com/enzo2589/exercice_python",
+    },
+    {
+        id: 12,
+        title: "Deploiement boutique WordPress (Restaurant)",
+        description: "Mise en place d'une boutique WordPress/WooCommerce sur LocalWP",
+        image: wordpressRestaurantFront,
+        tags: ["WordPress", "WooCommerce", "LocalWP", "E-commerce", "Tests"],
+        fullDescription: "Ce projet a consiste a concevoir et deployer un site e-commerce pour un restaurant avec WordPress. L'infrastructure a ete preparee en local avec LocalWP. Mon role a couvert l'installation du socle technique, la configuration du theme et le parametrage des extensions e-commerce (notamment WooCommerce) pour obtenir une boutique operationnelle.",
+        details: [
+            "Installation et configuration WordPress en local",
+            "Parametrage WooCommerce pour la prise de commande",
+            "Configuration du theme graphique et du catalogue",
+            "Tests d'integration du parcours client",
+            "Preparation de la prise en main cote restaurateur"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.5 Mettre a disposition des utilisateurs un service informatique",
+                evidence: "Prise en charge du deploiement complet du service WordPress, execution de tests d'integration/acceptation (parcours de commande), et production d'une documentation pour rendre l'utilisateur autonome."
+            }
+        ],
+        proofImages: [
+            {
+                src: wordpressRestaurantFront,
+                alt: "Front-office de la boutique WordPress restaurant"
+            },
+            {
+                src: wordpressRestaurantAdmin,
+                alt: "Back-office WordPress avec WooCommerce"
+            }
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
+        ],
+        link: "",
     },
 ];
 

@@ -90,3 +90,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Adaptation du projet `Workshop 2025 - Boite a cigares James Bond (IoT)` avec justification de la competence 1.4 et preuve visuelle.
 - Ajout du projet `Application Mobile Supanote (Flutter)` avec justifications des competences 1.1 et 1.5, integration de preuves (mobile, schema, Supabase), sources techniques et lien GitHub.
 - Ajout des deux tableaux de competences E4/E5 pour To-Do List PHP, Workshop 2025 et Supanote.
+- Ajout du projet `Site E-Commerce (React & API)` avec justification de la competence 1.1, lien GitHub et preuves visuelles (interface + code React/API).
+- Ajout du projet `Jeu du Demineur en Python` avec justification de la competence 1.6, lien GitHub et references documentaires Python (structures de donnees, random).
+- Ajout du projet `Deploiement boutique WordPress (Restaurant)` avec justification de la competence 1.5 et preuves front-office / back-office.
+- Ajout des preuves visuelles associees dans `src/img` : e-commerce, demineur et WordPress.
