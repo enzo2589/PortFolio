@@ -98,3 +98,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Verification locale du build en mode CI (`CI=true npm run build`) : compilation reussie.
 - Mise a jour du projet `Portfolio Personnel (React & Vercel)` avec justifications des competences 1.1 et 1.5, preuve de deploiement Vercel (`src/img/portfolio-vercel-proof.png`) et tableaux E4/E5.
 - Mise a jour du projet `Hackathon - Nuit de l'Info 2024` avec justifications des competences 1.4 et 1.5, structuration des preuves et tableaux E4/E5.
+- Refonte de la page `src/pages/VeilleTechno.jsx` pour clarifier la lecture : ajout de blocs "Theme", "Problematique", "Objectif", "Methode", renommage des sections en "Contexte", "Analyse", "Position personnelle", et explicitation de la section sources.
+- Amelioration de la lisibilite visuelle dans `src/style/VeilleTechno.css` avec des cartes de synthese en grille et un rendu mobile plus lisible.

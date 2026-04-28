@@ -80,13 +80,32 @@ export default function VeilleTechno() {
                 <section className="veille-techno-hero">
                     <h1 className="veille-techno-title">Ma Veille Technologique</h1>
                     <p className="veille-techno-subtitle">
-                        L&apos;impact de l&apos;IA sur le metier de developpeur : remplacement ou assistance indispensable ?
+                        Sujet : impact de l&apos;IA sur le metier de developpeur (assistance, limites et evolution du role)
                     </p>
                 </section>
 
                 <section className="veille-techno-themes">
                     <div className="theme-section">
-                        <h2 className="theme-title">Introduction</h2>
+                        <div className="veille-summary-grid">
+                            <article className="summary-card">
+                                <h3>Theme</h3>
+                                <p>Impact de l&apos;IA generative sur le developpement logiciel.</p>
+                            </article>
+                            <article className="summary-card">
+                                <h3>Problematique</h3>
+                                <p>L&apos;IA remplace-t-elle le developpeur ou augmente-t-elle sa productivite ?</p>
+                            </article>
+                            <article className="summary-card">
+                                <h3>Objectif</h3>
+                                <p>Comparer les gains concrets, les limites et les risques sur le terrain.</p>
+                            </article>
+                            <article className="summary-card">
+                                <h3>Methode</h3>
+                                <p>Analyse croisee d&apos;etudes officielles, retours de pratique et demos outils.</p>
+                            </article>
+                        </div>
+
+                        <h2 className="theme-title">Contexte</h2>
                         <p className="theme-description">
                             Les assistants IA comme GitHub Copilot ou Gemini changent deja le
                             quotidien des developpeurs. Ils accelerent la production de code,
@@ -96,7 +115,7 @@ export default function VeilleTechno() {
                             transforment-ils le role du developpeur ?&quot;.
                         </p>
 
-                        <h2 className="theme-title">Arguments</h2>
+                        <h2 className="theme-title">Analyse</h2>
                         <p className="theme-description">
                             <strong>1) Des gains de productivite reels :</strong> plusieurs
                             etudes (GitHub, McKinsey, DORA) montrent un gain de vitesse sur les
@@ -118,13 +137,19 @@ export default function VeilleTechno() {
                             cadre d&apos;usage strict (revues, tests, gouvernance).
                         </p>
 
-                        <h2 className="theme-title">Conclusion</h2>
+                        <h2 className="theme-title">Position personnelle</h2>
                         <p className="theme-description">
                             A court et moyen terme, ces outils ne remplacent pas les
                             developpeurs. Ils deviennent des assistants puissants qui augmentent
                             la vitesse d&apos;execution, a condition d&apos;etre utilises avec rigueur.
                             La valeur humaine reste decisive pour comprendre le besoin, garantir
                             la qualite et prendre les decisions techniques.
+                        </p>
+
+                        <h2 className="theme-title">Sources et traces</h2>
+                        <p className="theme-description">
+                            Les ressources ci-dessous sont classees par type (article/video) et
+                            date pour faciliter la lecture et la justification de la veille.
                         </p>
 
                         <div className="items-list">
