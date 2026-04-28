@@ -18,20 +18,52 @@ import ecommerceReactUi from '../img/ecommerce-react-ui.png';
 import demineurPythonPreuve from '../img/demineur-python-preuve.png';
 import wordpressRestaurantFront from '../img/wordpress-restaurant-front.png';
 import wordpressRestaurantAdmin from '../img/wordpress-restaurant-admin.png';
+import portfolioVercelProof from '../img/portfolio-vercel-proof.png';
 
 export const projectsData = [
     {
         id: 1,
-        title: "Portfolio",
-        description: "Mon portfolio personnel développé avec React",
+        title: "Portfolio Personnel (React & Vercel)",
+        description: "Vitrine professionnelle React deployee en continu sur Vercel",
         image: imgportfolio,
-        tags: ["React", "CSS", "JavaScript"],
-        fullDescription: "Ce projet est mon portfolio personnel, développé avec React. Il présente mes projets, mes compétences et mes certifications. C'est une excellente vitrine de mes capacités en développement web front-end.",
+        tags: ["React", "React Router", "JavaScript", "CSS", "Vercel", "GitHub"],
+        fullDescription: "Ce projet constitue ma vitrine professionnelle : un portfolio personnel developpe avec React. L'objectif etait de concevoir une interface moderne, reactive et fluide avec React Router, en y integrant des animations de navigation. Au-dela du developpement front-end, ce projet m'a permis de gerer le cycle de vie complet d'une application web : versionnement, integration et mise en production continue sur Vercel.",
         details: [
-            "Interface moderne et réactive",
+            "Interface moderne et responsive",
             "Navigation fluide avec React Router",
-            "Design épuré et professionnel",
-            "Animations et transitions élégantes"
+            "Animations et transitions pour l'experience utilisateur",
+            "Versionnement du code avec Git/GitHub",
+            "Deploiement continu automatise avec Vercel"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.1 Gerer le patrimoine informatique",
+                evidence: "Gestion rigoureuse du patrimoine logiciel via Git et depot distant : chaque evolution du portfolio est recensee, versionnee et sauvegardee pour assurer tracabilite et maintenance."
+            },
+            {
+                skill: "1.5 Mettre a disposition des utilisateurs un service informatique",
+                evidence: "Deploiement en production via Vercel avec synchronisation au depot GitHub, puis tests d'integration (navigation interne, affichage responsive mobile/tablette/bureau) avant publication."
+            }
+        ],
+        proofImages: [
+            {
+                src: portfolioVercelProof,
+                alt: "Tableau de deploiement Vercel du portfolio"
+            }
+        ],
+        documentationLinks: [
+            "https://github.com/enzo2589/PortFolio",
+            "https://port-folio-snowy-nine.vercel.app"
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
         ],
         link: "https://github.com/enzo2589/PortFolio",
     },
@@ -152,17 +184,43 @@ export const projectsData = [
     },
     {
         id: 5,
-        title: "nuit de l'info 2024",
-        description: "création d'un site mettant en relation l'océan et l'homme",
+        title: "Hackathon - Nuit de l'Info 2024",
+        description: "Prototype developpe en equipe en une nuit",
         image: nuitinfo,
-        tags: ["HTML", "CSS", "JavaScript"],
-        fullDescription: "Projet créé lors de la Nuit de l'Info 2024. L'objectif était de créer un site mettant en avant la relation entre l'océan et l'humanité, sensibilisant aux enjeux écologiques marins.",
+        tags: ["Hackathon", "HTML", "CSS", "JavaScript", "GitHub", "Equipe"],
+        fullDescription: "Lors de la Nuit de l'Info 2024, hackathon national etudiant, j'ai collabore avec mon equipe pour concevoir, developper et livrer un prototype fonctionnel en une seule nuit. Sous forte contrainte de temps, nous avons decoupe les besoins, code en parallele et versionne en continu sur GitHub pour conserver un flux de travail stable.",
         details: [
-            "Thème océan et écologie",
-            "Design innovant et engageant",
-            "Navigation interactive",
-            "Informations pédagogiques",
-            "Responsive design"
+            "Developpement d'un prototype en delai tres court",
+            "Organisation des taches en contexte d'urgence",
+            "Travail collaboratif et communication continue",
+            "Versionnement simultane sur GitHub",
+            "Livraison d'une version demonstrable pour le jury"
+        ],
+        competencyJustifications: [
+            {
+                skill: "1.4 Travailler en mode projet",
+                evidence: "Analyse rapide des objectifs, decoupage en taches realistes, repartition immediate du travail et reajustement des priorites en temps reel pour respecter l'echeance."
+            },
+            {
+                skill: "1.5 Mettre a disposition des utilisateurs un service informatique",
+                evidence: "Preparation d'un prototype deploie et testable par le jury, avec verification ciblee des fonctionnalites critiques (chemin utilisateur principal) avant restitution."
+            }
+        ],
+        proofImages: [
+            {
+                src: nuitinfo,
+                alt: "Prototype realise pendant la Nuit de l'Info 2024"
+            }
+        ],
+        competencyTables: [
+            {
+                label: "Tableau competences E4",
+                url: "/tableau-competences-epreuve-e4.pdf"
+            },
+            {
+                label: "Tableau competences E5",
+                url: "/tableau-synthese-competences-e5-annexe8.pdf"
+            }
         ],
         link: "",
     },

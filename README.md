@@ -96,3 +96,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Ajout des preuves visuelles associees dans `src/img` : e-commerce, demineur et WordPress.
 - Correction du blocage de deploiement Vercel : suppression des imports non utilises dans `src/data/projectsData.js` (warnings ESLint qui deviennent bloquants en mode CI).
 - Verification locale du build en mode CI (`CI=true npm run build`) : compilation reussie.
+- Mise a jour du projet `Portfolio Personnel (React & Vercel)` avec justifications des competences 1.1 et 1.5, preuve de deploiement Vercel (`src/img/portfolio-vercel-proof.png`) et tableaux E4/E5.
+- Mise a jour du projet `Hackathon - Nuit de l'Info 2024` avec justifications des competences 1.4 et 1.5, structuration des preuves et tableaux E4/E5.
