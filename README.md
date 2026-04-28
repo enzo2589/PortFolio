@@ -69,3 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # PortFolio
+
+## Journal des modifications
+
+- Remplacement de l'ancien tableau des competences par le nouveau PDF fourni : `public/tableau-competences-epreuve-e4.pdf`.
+- Mise a jour de la constante de telechargement dans `src/constants/downloads.js` vers `TABLEAU_COMPETENCES_E4_PDF`.
+- Mise a jour des liens de consultation/telechargement et des libelles "Epreuve E4" dans `src/pages/Skills.jsx` et `src/components/SkillsSection.jsx`.
