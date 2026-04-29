@@ -3,6 +3,7 @@ import { useMemo, useState } from 'react';
 import { skillsData } from '../data/skillsData';
 import { TABLEAU_SYNTHESE_COMPETENCES_E5_PDF } from '../constants/downloads';
 import { projectsData } from '../data/projectsData';
+import { stagesData } from '../data/stagesData';
 import '../style/Skills.css';
 
 export default function Skills() {
@@ -17,6 +18,16 @@ export default function Skills() {
         () =>
             projectsData.filter((project) =>
                 project.competencyJustifications?.some((item) =>
+                    item.skill.startsWith(`${selectedSkillCode} `)
+                )
+            ),
+        [selectedSkillCode]
+    );
+
+    const relatedStages = useMemo(
+        () =>
+            stagesData.filter((stage) =>
+                stage.competencyJustifications?.some((item) =>
                     item.skill.startsWith(`${selectedSkillCode} `)
                 )
             ),
@@ -88,6 +99,35 @@ export default function Skills() {
                         ) : (
                             <p className="related-empty">
                                 Aucun projet rattache a cette competence pour le moment.
+                            </p>
+                        )}
+                    </section>
+                )}
+
+                {selectedSkillCategory && (
+                    <section className="skills-related-projects">
+                        <h2>
+                            Stages lies a la competence {selectedSkillCategory.code}
+                        </h2>
+                        <p className="related-subtitle">
+                            {selectedSkillCategory.category}
+                        </p>
+
+                        {relatedStages.length > 0 ? (
+                            <div className="related-projects-grid">
+                                {relatedStages.map((stage) => (
+                                    <Link to={`/stages/${stage.id}`} key={stage.id} className="related-project-card">
+                                        <div className="related-project-card-content">
+                                            <h3>{stage.title}</h3>
+                                            <p>{stage.company}</p>
+                                            <p>{stage.period}</p>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        ) : (
+                            <p className="related-empty">
+                                Aucun stage rattache a cette competence pour le moment.
                             </p>
                         )}
                     </section>
