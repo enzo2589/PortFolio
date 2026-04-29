@@ -1,5 +1,6 @@
 export const skillsData = [
     {
+        code: "1.1",
         category: "Gérer le patrimoine informatique",
         icon: "💾",
         skills: [
@@ -12,6 +13,7 @@ export const skillsData = [
         ]
     },
     {
+        code: "1.2",
         category: "Répondre aux incidents et aux demandes d’assistance et d’évolution",
         icon: "🆘",
         skills: [
@@ -21,6 +23,7 @@ export const skillsData = [
         ]
     },
     {
+        code: "1.3",
         category: "Développer la présence en ligne de l’organisation",
         icon: "🌐",
         skills: [
@@ -30,6 +33,7 @@ export const skillsData = [
         ]
     },
     {
+        code: "1.4",
         category: "Travailler en mode projet",
         icon: "📋",
         skills: [
@@ -39,6 +43,7 @@ export const skillsData = [
         ]
     },
     {
+        code: "1.5",
         category: "Mettre à disposition des utilisateurs un service informatique",
         icon: "🚀",
         skills: [
@@ -48,6 +53,7 @@ export const skillsData = [
         ]
     },
     {
+        code: "1.6",
         category: "Organiser son développement professionnel",
         icon: "🎓",
         skills: [

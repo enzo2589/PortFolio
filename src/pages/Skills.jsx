@@ -1,9 +1,28 @@
 import { Link } from 'react-router-dom';
+import { useMemo, useState } from 'react';
 import { skillsData } from '../data/skillsData';
 import { TABLEAU_SYNTHESE_COMPETENCES_E5_PDF } from '../constants/downloads';
+import { projectsData } from '../data/projectsData';
 import '../style/Skills.css';
 
 export default function Skills() {
+    const [selectedSkillCode, setSelectedSkillCode] = useState(null);
+
+    const selectedSkillCategory = useMemo(
+        () => skillsData.find((category) => category.code === selectedSkillCode) || null,
+        [selectedSkillCode]
+    );
+
+    const relatedProjects = useMemo(
+        () =>
+            projectsData.filter((project) =>
+                project.competencyJustifications?.some((item) =>
+                    item.skill.startsWith(`${selectedSkillCode} `)
+                )
+            ),
+        [selectedSkillCode]
+    );
+
     return (
         <main className="skills-container">
             <div className="skills-header">
@@ -20,22 +39,59 @@ export default function Skills() {
 
                 <section className="skills-grid">
                     {skillsData.map((category) => (
-                        <div key={category.category} className="skills-category">
+                        <div
+                            key={category.category}
+                            className={`skills-category ${selectedSkillCode === category.code ? 'selected' : ''}`}
+                        >
                             <div className="category-header">
                                 <span className="category-icon">{category.icon}</span>
-                                <h2 className="category-title">{category.category}</h2>
+                                <h2 className="category-title">{category.code} - {category.category}</h2>
                             </div>
 
                             <div className="skills-list">
                                 {category.skills.map((skill) => (
-                                    <div key={skill} className="skill-item">
+                                    <button
+                                        key={skill}
+                                        type="button"
+                                        className={`skill-item ${selectedSkillCode === category.code ? 'active' : ''}`}
+                                        onClick={() => setSelectedSkillCode(category.code)}
+                                    >
                                         <p className="skill-description">{skill}</p>
-                                    </div>
+                                    </button>
                                 ))}
                             </div>
                         </div>
                     ))}
                 </section>
+
+                {selectedSkillCategory && (
+                    <section className="skills-related-projects">
+                        <h2>
+                            Projets lies a la competence {selectedSkillCategory.code}
+                        </h2>
+                        <p className="related-subtitle">
+                            {selectedSkillCategory.category}
+                        </p>
+
+                        {relatedProjects.length > 0 ? (
+                            <div className="related-projects-grid">
+                                {relatedProjects.map((project) => (
+                                    <Link to={`/projet/${project.id}`} key={project.id} className="related-project-card">
+                                        <img src={project.image} alt={project.title} />
+                                        <div className="related-project-card-content">
+                                            <h3>{project.title}</h3>
+                                            <p>{project.description}</p>
+                                        </div>
+                                    </Link>
+                                ))}
+                            </div>
+                        ) : (
+                            <p className="related-empty">
+                                Aucun projet rattache a cette competence pour le moment.
+                            </p>
+                        )}
+                    </section>
+                )}
 
                 <div className="skills-footer actions">
                     <a
