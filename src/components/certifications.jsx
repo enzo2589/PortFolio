@@ -20,6 +20,13 @@ const certifications = [
 		image: placeholderImage,
 		tags: ["compétences numériques"],
 	},
+	{
+		id: 3,
+		title: "GitHub Foundation",
+		description: "Certification GitHub Foundation.",
+		image: placeholderImage,
+		tags: ["GitHub", "Versioning", "Collaboration"],
+	},
 ];
 
 export default function Certifications() {

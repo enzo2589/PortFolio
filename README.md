@@ -110,3 +110,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Ajout d'une navigation competence -> projets dans `src/pages/Skills.jsx` : clic sur une competence (1.1 a 1.6) pour afficher les projets associes, avec cartes cliquables qui redirigent vers `"/projet/:id"`.
 - Enrichissement de `src/data/skillsData.js` avec les codes de competences (1.1 a 1.6) et mise a jour de `src/style/Skills.css` pour les etats visuels (selection active) et la grille des projets lies.
 - Extension de la navigation competence dans `src/pages/Skills.jsx` : ajout des cartes de stages lies a la competence selectionnee, avec redirection vers `"/stages/:id"` (entreprise + periode visibles sur la carte).
+- Remplacement du fichier `public/tableau-synthese-competences-e5-annexe8.pdf` par le nouveau tableau de competences fourni (BTS SIO 2025 Annexe 8.1 E5).
+- Ajout d'une certification `GitHub Foundation` dans `src/components/certifications.jsx`.
