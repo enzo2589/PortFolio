@@ -1,7 +1,8 @@
 
 import "../style/Certifications.css";
-import placeholderImage from '../img/image1.jpeg';
 import ebios from '../img/certif_EBIOS.png';
+import certifPix from '../img/certif_pix.png';
+import certifGithubFoundation from '../img/certif_github_foundation.png';
 import { Link } from 'react-router-dom';
 
 
@@ -17,14 +18,14 @@ const certifications = [
 		id: 2,
 		title: "Pix",
 		description: "Certification Pix.",
-		image: placeholderImage,
+		image: certifPix,
 		tags: ["compétences numériques"],
 	},
 	{
 		id: 3,
 		title: "GitHub Foundation",
 		description: "Certification GitHub Foundation.",
-		image: placeholderImage,
+		image: certifGithubFoundation,
 		tags: ["GitHub", "Versioning", "Collaboration"],
 	},
 ];
