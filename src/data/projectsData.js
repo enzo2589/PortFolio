@@ -3,6 +3,7 @@ import divinouze from '../img/brasserie_logo.png';
 import nuitinfo from '../img/nuitinfos.png';
 import divinouzePreuvePresentation from '../img/divinouze-preuve-presentation.png';
 import divinouzePreuveAuth from '../img/divinouze-preuve-auth.png';
+import divinouzePreuveTrello from '../img/divinouze-preuve-trello.png';
 import gestionBddCircuitsInterface from '../img/gestion-bdd-circuits-interface.png';
 import gestionBddCircuitsSchema from '../img/gestion-bdd-circuits-schema.png';
 import workshop2024Preuve from '../img/workshop-2024-preuve.png';
@@ -114,6 +115,10 @@ export const projectsData = [
             {
                 src: divinouzePreuveAuth,
                 alt: "Code PHP de controle d'authentification et des roles"
+            },
+            {
+                src: divinouzePreuveTrello,
+                alt: "Tableau Trello de planification du projet Brasserie Divinouz (sprints 1 a 5)"
             }
         ],
         documentationLinks: [
